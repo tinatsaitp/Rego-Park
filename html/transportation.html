@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title> Transportations </title>
+<link rel="icon" type="image/x-icon" href="../imgs/favicon.ico">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- google font: https://fonts.google.com/specimen/Varela+Round?query=Round#standard-styles -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+<!-- social media buttons: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="../css/2_columns.css" rel="stylesheet" type="text/css">
+<link href="../css/pages.css" rel="stylesheet" type="text/css">
+<link href="../css/tab_slider_text.css" rel="stylesheet" type="text/css">
+
+<!-- link to external js for tab slider -->
+<script type="text/javascript" src="../js/tab.slider.text.js"></script>
+<!-- link to external js for Jssor resource -->
+<script type="text/javascript" src="../js/jssor.slider.min.js"></script>
+</head>
+
+
+
+
+
+<body>
+<!-- Side Navigation Overlay: https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+  <a href="../index.html">Home</a>
+  <a href="history.html">History</a>
+<!-- Dropdown Sidebar: https://www.w3schools.com/howto/howto_js_dropdown_sidenav.asp -->
+  <button class="dropdown-btn">Neighborhood<span id="downtriangle">&#9660;</span></button>
+    <div class="dropdown-container">
+      <a href="transportation.html">Transportations</a>
+      <a href="shopping_mall.html">Shopping Malls</a>
+      <a href="store.html">More Stores</a>
+      <a href="fast_food.html">Fast-Food Chains</a>
+      <a href="chinese_food.html">Chinese/Japanese Cuisine Restaurants</a>
+      <a href="school.html">Schools</a>
+    </div>
+  <a href="contact.html">Contact</a>
+  <a href="sitemap.html">Sitemap</a>
+  <a href="credit.html">Credits</a>
+</div>
+
+
+
+<div id="navbar">
+  <span id="icon" onclick="openNav()">&#8801;</span>
+  <span><a href="../index.html" id="logolink"><img src="../imgs/logo.png" alt="Logo" id="logo"></a></span>
+  <span id="lang">中文</span>
+</div>
+
+
+
+<div id="navbar-space">
+</div>
+
+
+
+<div class="content">
+    <h1 class="page_title"> Transportations </h1>
+
+    <p>
+        Rego Park is super convenient because you can get there by subway or buses.
+    </p>
+<br>
+    <h2 class="page_title"> How to get to Rego Park by Bus? </h2>
+    <div class="row">
+        <div class="column">
+            <!-- Tab Slider Text: https://www.jssor.com -->
+            <div id="slider1_container">
+                
+                <!-- Slides Container -->
+                <div data-u="slides" id="slider1_container_imgbox">
+                    <div>
+                        <img src="../imgs/transportation/bus/Q38.jpg" alt="Bus-Q38" class="tab-slider-img">
+                        <div data-u="thumb">Q38</div>
+                    </div>
+                    <div>
+                        <img src="../imgs/transportation/bus/Q59.jpg" alt="Bus-Q59" class="tab-slider-img">
+                        <div data-u="thumb">Q59</div>
+                    </div>
+                    <div>
+                        <img src="../imgs/transportation/bus/Q59_route.jpg" alt="Bus-Q59 Route" class="tab-slider-img">
+                        <div data-u="thumb">Q59 Route</div>
+                    </div>
+                    <div>
+                        <img src="../imgs/transportation/bus/Q60.jpg" alt="Bus-Q60" class="tab-slider-img">
+                        <div data-u="thumb">Q60</div>
+                    </div>
+                    <div>
+                        <img src="../imgs/transportation/bus/Q60_route.jpg" alt="Bus-Q60 Route" class="tab-slider-img">
+                        <div data-u="thumb">Q60 Route</div>
+                    </div>
+                    <div>
+                        <img src="../imgs/transportation/bus/Q72.jpg" alt="Bus-Q72" class="tab-slider-img">
+                        <div data-u="thumb">Q72</div>
+                    </div>
+                </div>
+                <!--#region ThumbnailNavigator Skin Begin -->
+
+                <div data-u="thumbnavigator" class="jssort12" style="left:0px; top: 0px;">
+                    <!-- Thumbnail Item Skin Begin -->
+                    <div data-u="slides" style="cursor: default; top: 0px; left: 0px;">
+                        <div data-u="prototype" class="p">
+                            <div class=w><div data-u="thumbnailtemplate" class="c"></div></div>
+                        </div>
+                    </div>
+                    <!-- Thumbnail Item Skin End -->
+                </div>
+                <!--#endregion ThumbnailNavigator Skin End -->
+                <!-- Trigger -->
+                <script>
+                    jssor_slider1_init('slider1_container');
+                </script>
+            </div>
+            <!-- Jssor Slider End -->
+        </div>
+        <div class="column align-left">
+            <h2>You can take:</h2>
+                <h3 class="page_title">Q38</h3>
+                <p>
+                    For more information, please visit <a href="https://bustime.mta.info/m/?q=Q38" target="_blank" class="link"><em>MTA Bus Time</em></a>.
+                </p>
+            <br>
+                <h3 class="page_title">Q59</h3>
+                <p>
+                    For more information, please visit <a href="https://bustime.mta.info/m/?q=Q59" target="_blank" class="link"><em>MTA Bus Time</em></a>.
+                </p>
+            <br>
+                <h3 class="page_title">Q60</h3>
+                <p>
+                    For more information, please visit <a href="https://bustime.mta.info/m/?q=Q60" target="_blank" class="link"><em>MTA Bus Time</em></a>.
+                </p>
+            <br>
+                <h3 class="page_title">Q72</h3>
+                <p>
+                    For more information, please visit <a href="https://bustime.mta.info/m/?q=Q72" target="_blank" class="link"><em>MTA Bus Time</em></a>.
+                </p>
+            <br>
+                <h3>And more...</h3>
+        </div>
+    </div>
+
+    <h2 class="page_title"> How to get to Rego Park by Subway? </h2>
+    <div class="row">
+        <div class="column">
+            <!-- Tab Slider Text: https://www.jssor.com -->
+            <div id="slider2_container">
+                
+                <!-- Slides Container -->
+                <div data-u="slides" id="slider2_container_imgbox">
+                    <div>
+                        <img src="../imgs/transportation/subway/entrance01.jpg" alt="Bus-Q38" class="tab-slider-img">
+                        <div data-u="thumb">Entrance 01</div>
+                    </div>
+                    <div>
+                        <img src="../imgs/transportation/subway/entrance02.jpg" alt="Bus-Q59" class="tab-slider-img">
+                        <div data-u="thumb">Entrance 02</div>
+                    </div>
+                    <div>
+                        <img src="../imgs/transportation/subway/entrance03.jpg" alt="Bus-Q59 Route" class="tab-slider-img">
+                        <div data-u="thumb">Entrance 03</div>
+                    </div>
+                </div>
+                <!--#region ThumbnailNavigator Skin Begin -->
+
+                <div data-u="thumbnavigator" class="jssort12" style="left:0px; top: 0px;">
+                    <!-- Thumbnail Item Skin Begin -->
+                    <div data-u="slides" style="cursor: default; top: 0px; left: 0px;">
+                        <div data-u="prototype" class="p">
+                            <div class=w><div data-u="thumbnailtemplate" class="c"></div></div>
+                        </div>
+                    </div>
+                    <!-- Thumbnail Item Skin End -->
+                </div>
+                <!--#endregion ThumbnailNavigator Skin End -->
+                <!-- Trigger -->
+                <script>
+                    jssor_slider2_init('slider2_container');
+                </script>
+            </div>
+            <!-- Jssor Slider End -->
+        </div>
+        <div class="column align-left">
+            <h2>You can take:</h2>
+                <h3 class="page_title">R Train or M Train</h3>
+                <p>
+                    There are 6 entrances in total.
+                    <br>
+                    For more information about <strong class="page_title">R train</strong>, please <a href="https://moovitapp.com/index/en/public_transit-line-R-NYCNJ-121-855111-400175-0" target="_blank" class="link">Click Here</a>.
+                    <br>
+                    For more information about <strong class="page_title">M train</strong>, please <a href="https://moovitapp.com/index/en/public_transit-line-M-NYCNJ-121-855111-530600-0" target="_blank" class="link">Click Here</a>.
+                </p>
+        </div>
+    </div>
+</div>
+
+
+
+<footer>
+  <p>
+    <!-- add font awesome icons: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
+    <a href="https://www.instagram.com/art_tinatsai/" target="_blank" class="fa fa-instagram"></a>
+    <a href="https://www.youtube.com/channel/UCtJ8DekwubmhOjbzRtg7CXw" target="_blank" class="fa fa-youtube-play"></a>
+    <a href="https://www.linkedin.com/in/yun-ting-tsai-4bab791b8/" target="_blank" class="fa fa-linkedin"></a>
+
+    <br><br>
+
+    © 2021 <a href="https://arttinatsai.weebly.com/" target="_blank" id="footer-link"> Yun-Ting Tsai </a>
+  </p>
+</footer>
+
+<button onclick="topFunction()" id="to_top_btn" title="Go To Top">&#x25B2;</i></button>
+
+<script src="../js/pages.js"></script>
+</body>
+</html>

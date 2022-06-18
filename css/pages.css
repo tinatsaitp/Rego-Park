@@ -1,0 +1,319 @@
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: 'Varela Round', Helvetica, sans-serif;
+}
+
+/*top navbar*/
+#navbar {
+  overflow: hidden;
+  background-color: #E7BF81;
+  padding: 25px 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0px 1px 10px #575757;
+}
+
+#logolink{
+  display: block;
+  height: 40px;
+  width: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#logo{
+  display: block;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -45px;
+}
+
+#icon {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 10px;
+  font-size:30px;
+  cursor:pointer;
+}
+
+#lang {
+  float: right;
+  margin-top: -28px;
+  margin-bottom: auto;
+  padding-right: 10px;
+  font-size:16px;
+  font-weight: bold;
+  cursor:pointer;
+}
+
+#navbar-space{
+  margin: 80px;
+}
+
+
+
+
+
+/*sidenav*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #72744F; /*sidenav bg color*/
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a, .dropdown-btn {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #c7c2bd; /*sidenav text color*/
+  border: none;
+  background: none;
+  display: block;
+  transition: 0.5s;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+#closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 35px;
+  text-align: right;
+}
+
+#closebtn:hover {
+  background-color: #72744F;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+  color: white;
+  background-color: #b7ba86;
+}
+
+#downtriangle {
+  position: absolute;
+  margin-left: 42px;
+}
+
+.active {
+  background-color: #b7ba86;
+  color: white;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #4b4d2e;
+  padding-left: 15px;
+}
+
+
+
+
+
+/*footer*/
+footer {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-weight: normal;
+  color: white;
+  background-color: #B59565;
+}
+
+#footer-link:link {
+  color: white;
+}
+
+#footer-link:visited {
+  color:  white;
+}
+
+#footer-link:hover {
+  color: #804d00;
+}
+
+
+
+
+
+/*social media buttons*/
+.fa {
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 3px;
+}
+
+.fa:hover {
+  color: #804d00;
+}
+
+.fa-instagram {
+  color: white;
+}
+
+.fa-youtube-play {
+  color: white;
+}
+
+.fa-linkedin {
+  color: white;
+}
+
+
+
+/* go to top button */
+#to_top_btn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 10;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 12px;
+  border-radius: 5px;
+  opacity: 0.5;
+  color: white;
+  font-size:20px;
+  background-color: #E7BF81;
+}
+
+#to_top_btn:hover {
+  background-color: #804d00;
+}
+
+
+
+.link:link {
+  color: #B59565;
+  text-decoration: none;
+}
+
+.link:visited {
+  color:  #B59565;
+}
+
+.link:hover {
+  color: #E7BF81;
+}
+
+
+
+.page_title {
+  color: #B59565;
+/*  background-color: yellow; */
+}
+
+.content{
+  padding: 5px 30px;
+  text-align: center;
+  font-weight: bold;
+  color: #804d00;
+  line-height: 2;
+/*  background-color: blue; */
+}
+
+.small {
+  font-size: 14px;
+}
+
+.align-left{
+  text-align: left;
+  padding-left: 30px;
+}
+
+strong{
+  color: red;
+}
+
+
+
+/* chinese food page */
+.orange-star {
+  color: orange;
+  font-size: 20px;
+  margin: -15px;
+}
+
+
+
+/* contact page */
+#selfie {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 5px;
+  width: 300px;
+  height: auto;
+  box-shadow: 0px 0px 10px #424242;
+}
+
+.survey {
+  margin-bottom: -5px;
+  text-decoration: underline;
+}
+
+label {
+  color: #B59565;
+}
+
+.button {
+  padding: 5px 15px;
+    text-align: center;
+    font-weight: bold;
+    color: #804d00;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #E7BF81;
+}
+
+.button:hover {
+  color: white;
+  background-color: #B59565;
+}
+
+
+
+/* sitemap page */
+.circle-style {
+  list-style-type: circle;
+}
+
+.square-style {
+  list-style-type:square;
+}
+
+
+
+/* credit page */
+.no-style {
+  list-style-type: none;
+  margin-right: 32px;
+}
+
+.list-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 5px;
+/*  background-color: red; */
+}

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title> Contact </title>
+<link rel="icon" type="image/x-icon" href="../imgs/favicon.ico">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- google font: https://fonts.google.com/specimen/Varela+Round?query=Round#standard-styles -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+<!-- social media buttons: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="../css/pages.css" rel="stylesheet" type="text/css">
+</head>
+
+
+
+
+
+<body>
+<!-- Side Navigation Overlay: https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+  <a href="../index.html">Home</a>
+  <a href="history.html">History</a>
+<!-- Dropdown Sidebar: https://www.w3schools.com/howto/howto_js_dropdown_sidenav.asp -->
+  <button class="dropdown-btn">Neighborhood<span id="downtriangle">&#9660;</span></button>
+    <div class="dropdown-container">
+      <a href="transportation.html">Transportations</a>
+      <a href="shopping_mall.html">Shopping Malls</a>
+      <a href="store.html">More Stores</a>
+      <a href="fast_food.html">Fast-Food Chains</a>
+      <a href="chinese_food.html">Chinese/Japanese Cuisine Restaurants</a>
+      <a href="school.html">Schools</a>
+    </div>
+  <a href="contact.html">Contact</a>
+  <a href="sitemap.html">Sitemap</a>
+  <a href="credit.html">Credits</a>
+</div>
+
+
+
+<div id="navbar">
+  <span id="icon" onclick="openNav()">&#8801;</span>
+  <span><a href="../index.html" id="logolink"><img src="../imgs/logo.png" alt="Logo" id="logo"></a></span>
+  <span id="lang">中文</span>
+</div>
+
+
+
+<div id="navbar-space">
+</div>
+
+
+
+<div class="content">
+  <h1 class="page_title"> Contact </h1>
+  <img src="../imgs/contact/selfie.jpg" alt="Selfie" id="selfie">
+  <p>
+    Website Designer: Yun-Ting Tsai
+    <br>
+    Photographer: Yun-Ting Tsai
+  </p>
+  <p class="small">
+    Yun-Ting has been a resident of Rego Park for about 5 years.
+    <br>
+    She wants to share this neighborhood with others, 
+    <br>
+    so that more people can discover this beautiful place in New York City.
+    <br>
+    <br>
+    Yun-Ting is a Hunter College student who is interested in communication design, 
+    <br>
+    such as graphic design and web design, and animation.
+    <br>
+    She is also passionate about entering the field of design or animation as her career.
+  </p>
+
+<br>
+<br>
+<br>
+
+  <h3>
+    Thanks to everyone who read my website.
+    <br>
+    I hope you will have some interest in visiting Rego Park.
+    <br>
+    If you have more Rego Park information that you want to share with other visitors <br> or have any feedback on improving this website, welcome to contact me anytime!
+  </h3>
+  
+<br>
+<br>
+<br>
+
+<!-- send email from a form: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_mail -->
+<h2 class="page_title">Email Me via the Form Below</h2>
+
+<!-- more advance scripting is to send the message to php, asp, jsp file, etc. -->
+  <form action="mailto:myart.tinatsai@gmail.com" method="post" enctype="text/plain">
+    Name:<br>
+    <input type="text" name="name" required><br>
+    Email:<br>
+    <input type="email" name="email" required><br>
+    Comment:<br>
+    <textarea rows="5" cols="30" name="comment" required></textarea>
+  <br>
+    <input type="submit" value="Send" class="button">
+    <input type="reset" value="Reset" class="button">
+  </form>
+
+<br>
+<br>
+<br>
+
+<h2 class="page_title">Take a Survey</h2>
+<p class="small">
+  *** 01 is very little; 05 is very much ***
+</p>
+
+  <form action="mailto:myart.tinatsai@gmail.com" method="post" enctype="text/plain">
+<!-- radio buttons: https://www.w3schools.com/tags/att_input_type_radio.asp --> 
+    <p class="survey">After going through this website, do you know Rego Park better?</p>
+      <input type="radio" name="know_better" id="01" value="01" required>
+      <label for="01">01</label>
+      <input type="radio" name="know_better" id="02" value="02">
+      <label for="02">02</label>
+      <input type="radio" name="know_better" id="03" value="03">
+      <label for="03">03</label>
+      <input type="radio" name="know_better" id="04" value="04">
+      <label for="04">04</label>
+      <input type="radio" name="know_better" id="05" value="05">
+      <label for="05">05</label>
+    
+    <br>
+    
+    <p class="survey">Does this website increase your interest in visiting Rego Park?</p>
+      <input type="radio" name="interest" id="01" value="01" required>
+      <label for="01">01</label>
+      <input type="radio" name="interest" id="02" value="02">
+      <label for="02">02</label>
+      <input type="radio" name="interest" id="03" value="03">
+      <label for="03">03</label>
+      <input type="radio" name="interest" id="04" value="04">
+      <label for="04">04</label>
+      <input type="radio" name="interest" id="05" value="05">
+      <label for="05">05</label>
+
+    <br>
+    
+    <p class="survey">Will you introduce Rego Park to others (family, friends, etc.)?</p>
+      <input type="radio" name="introduce" id="01" value="01" required>
+      <label for="01">01</label>
+      <input type="radio" name="introduce" id="02" value="02">
+      <label for="02">02</label>
+      <input type="radio" name="introduce" id="03" value="03">
+      <label for="03">03</label>
+      <input type="radio" name="introduce" id="04" value="04">
+      <label for="04">04</label>
+      <input type="radio" name="introduce" id="05" value="05">
+      <label for="05">05</label>
+
+    <br>
+    
+    <p class="survey">Do you think this website effectively introduces rego Park?</p>
+      <input type="radio" name="effectively" id="01" value="01" required>
+      <label for="01">01</label>
+      <input type="radio" name="effectively" id="02" value="02">
+      <label for="02">02</label>
+      <input type="radio" name="effectively" id="03" value="03">
+      <label for="03">03</label>
+      <input type="radio" name="effectively" id="04" value="04">
+      <label for="04">04</label>
+      <input type="radio" name="effectively" id="05" value="05">
+      <label for="05">05</label>
+
+    <br>
+    
+    <p class="survey">What do you think of the way this website contents are organized?</p>
+      <input type="radio" name="organized" id="01" value="01" required>
+      <label for="01">01</label>
+      <input type="radio" name="organized" id="02" value="02">
+      <label for="02">02</label>
+      <input type="radio" name="organized" id="03" value="03">
+      <label for="03">03</label>
+      <input type="radio" name="organized" id="04" value="04">
+      <label for="04">04</label>
+      <input type="radio" name="organized" id="05" value="05">
+      <label for="05">05</label>
+    
+    <br>
+    
+    <p class="survey">What do you think of the functionality of this website?</p>
+      <input type="radio" name="functionality" id="01" value="01" required>
+      <label for="01">01</label>
+      <input type="radio" name="functionality" id="02" value="02">
+      <label for="02">02</label>
+      <input type="radio" name="functionality" id="03" value="03">
+      <label for="03">03</label>
+      <input type="radio" name="functionality" id="04" value="04">
+      <label for="04">04</label>
+      <input type="radio" name="functionality" id="05" value="05">
+      <label for="05">05</label>
+
+    <br>
+
+    <p class="survey">How is your overall experience using this website?</p>
+      <input type="radio" name="experience" id="01" value="01" required>
+      <label for="01">01</label>
+      <input type="radio" name="experience" id="02" value="02">
+      <label for="02">02</label>
+      <input type="radio" name="experience" id="03" value="03">
+      <label for="03">03</label>
+      <input type="radio" name="experience" id="04" value="04">
+      <label for="04">04</label>
+      <input type="radio" name="experience" id="05" value="05">
+      <label for="05">05</label> 
+
+    <br>
+    
+    <p>Thank you for taking the survey!</p>
+
+    <input type="submit" value="Send" class="button">
+    <input type="reset" value="Reset" class="button">
+
+  </form>
+<br>
+</div>
+
+
+
+<footer>
+  <p>
+    <!-- add font awesome icons: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
+    <a href="https://www.instagram.com/art_tinatsai/" target="_blank" class="fa fa-instagram"></a>
+    <a href="https://www.youtube.com/channel/UCtJ8DekwubmhOjbzRtg7CXw" target="_blank" class="fa fa-youtube-play"></a>
+    <a href="https://www.linkedin.com/in/yun-ting-tsai-4bab791b8/" target="_blank" class="fa fa-linkedin"></a>
+
+    <br><br>
+
+    © 2021 <a href="https://arttinatsai.weebly.com/" target="_blank" id="footer-link"> Yun-Ting Tsai </a>
+  </p>
+</footer>
+
+<button onclick="topFunction()" id="to_top_btn" title="Go To Top">&#x25B2;</i></button>
+
+<script src="../js/pages.js"></script>
+</body>
+</html>

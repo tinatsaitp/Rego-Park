@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<title>History</title>
+<link rel="icon" type="image/x-icon" href="../imgs/favicon.ico">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- google font: https://fonts.google.com/specimen/Varela+Round?query=Round#standard-styles -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+<!-- social media buttons: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="../css/pages.css" rel="stylesheet" type="text/css">
+<link href="../css/img-comp.css" rel="stylesheet" type="text/css">
+
+<!-- link to external js for image comparison -->
+<script src="../js/modernizr.js"></script> <!-- Modernizr -->	
+</head>
+
+
+
+
+
+<body>
+<!-- Side Navigation Overlay: https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+  <a href="../index.html">Home</a>
+  <a href="history.html">History</a>
+<!-- Dropdown Sidebar: https://www.w3schools.com/howto/howto_js_dropdown_sidenav.asp -->
+  <button class="dropdown-btn">Neighborhood<span id="downtriangle">&#9660;</span></button>
+    <div class="dropdown-container">
+      <a href="transportation.html">Transportations</a>
+      <a href="shopping_mall.html">Shopping Malls</a>
+      <a href="store.html">More Stores</a>
+      <a href="fast_food.html">Fast-Food Chains</a>
+      <a href="chinese_food.html">Chinese/Japanese Cuisine Restaurants</a>
+      <a href="school.html">Schools</a>
+    </div>
+  <a href="contact.html">Contact</a>
+  <a href="sitemap.html">Sitemap</a>
+  <a href="credit.html">Credits</a>
+</div>
+
+
+
+<div id="navbar">
+  <span id="icon" onclick="openNav()">&#8801;</span>
+  <span><a href="../index.html" id="logolink"><img src="../imgs/logo.png" alt="Logo" id="logo"></a></span>
+  <span id="lang">中文</span>
+</div>
+
+
+
+<div id="navbar-space">
+</div>
+
+
+<div class="content">
+	<h1 class="page_title"> History </h1>
+	<h2 class="page_title">Brief Introduction</h2>
+	  <p>
+	    Rego Park is a neighborhood in New York City, New York with a population of 53,634.
+	    <br>
+	    Rego Park gets its name from the Real Good Construction Company, <br> which began residential development in the area in the 1920s, combining the first two letters of “Real” and “Good.”
+	    <br>
+	    Rego Park is in Queens County and is one of the best places to live in New York.
+	    <br>
+	    Living in Rego Park offers residents a dense urban feel and most residents rent their homes, but its environment is family-friendly and full of life.
+	  </p>
+<br>
+  <h2 class="page_title"> Watch Videos to Learn More About the History of Rego Park:</h2>
+	  <iframe width="350" height="197" src="https://www.youtube.com/embed/NGlU_gfp1Ak" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  <iframe width="350" height="197" src="https://www.youtube.com/embed/oYmxiSFfo6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	  <iframe width="350" height="197" src="https://www.youtube.com/embed/dEm0Pf_9CAg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+<br>
+  <h2 class="page_title">Comparison of Past and Present</h2>
+<!-- Image Comparison: https://codyhouse.co/gem/css-jquery-image-comparison-slider/ -->
+	<figure class="cd-image-container">
+		<img src="../imgs/history/new_marshalls.jpg" alt="New Marshalls" class="comp-img">
+		<span class="cd-image-label" data-type="original">Now</span>
+
+		<div class="cd-resize-img"> <!-- the resizable image on top -->
+			<img src="../imgs/history/old_marshalls.jpg" alt="Old Marshalls" class="comp-img">
+			<span class="cd-image-label" data-type="modified">Then</span>
+		</div>
+
+		<span class="cd-handle"></span>
+	</figure> <!-- cd-image-container -->
+<br>
+	<figure class="cd-image-container">
+		<img src="../imgs/history/new_63rdSt.jpg" alt="New 63rd St" class="comp-img">
+		<span class="cd-image-label" data-type="original">Now</span>
+
+		<div class="cd-resize-img"> <!-- the resizable image on top -->
+			<img src="../imgs/history/old_63rdSt.jpg" alt="Old 63rd St" class="comp-img">
+			<span class="cd-image-label" data-type="modified">Then</span>
+		</div>
+
+		<span class="cd-handle"></span>
+	</figure> <!-- cd-image-container -->
+<br>
+	<figure class="cd-image-container">
+		<img src="../imgs/history/new_trylontheater.jpg" alt="New Trylon Theater" class="comp-img">
+		<span class="cd-image-label" data-type="original">Now</span>
+
+		<div class="cd-resize-img"> <!-- the resizable image on top -->
+			<img src="../imgs/history/old_trylontheater.jpg" alt="Old Trylon Theater" class="comp-img">
+			<span class="cd-image-label" data-type="modified">Then</span>
+		</div>
+
+		<span class="cd-handle"></span>
+	</figure> <!-- cd-image-container -->
+<br>
+</div>
+
+
+
+<footer>
+  <p>
+    <!-- add font awesome icons: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
+    <a href="https://www.instagram.com/art_tinatsai/" target="_blank" class="fa fa-instagram"></a>
+    <a href="https://www.youtube.com/channel/UCtJ8DekwubmhOjbzRtg7CXw" target="_blank" class="fa fa-youtube-play"></a>
+    <a href="https://www.linkedin.com/in/yun-ting-tsai-4bab791b8/" target="_blank" class="fa fa-linkedin"></a>
+
+    <br><br>
+
+    © 2021 <a href="https://arttinatsai.weebly.com/" target="_blank" id="footer-link"> Yun-Ting Tsai </a>
+  </p>
+</footer>
+
+<button onclick="topFunction()" id="to_top_btn" title="Go To Top">&#x25B2;</i></button>
+
+
+
+<!-- link to external js for image comparison -->
+<script src="../js/jquery-2.1.1.js"></script>
+<script src="../js/jquery.mobile.custom.min.js"></script> <!-- Resource jQuery -->
+<script src="../js/main.js"></script> <!-- Resource jQuery -->
+
+<script src="../js/pages.js"></script>
+</body>
+</html>

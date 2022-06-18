@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title> Shopping Malls </title>
+<link rel="icon" type="image/x-icon" href="../imgs/favicon.ico">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- google font: https://fonts.google.com/specimen/Varela+Round?query=Round#standard-styles -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+<!-- social media buttons: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="../css/pages.css" rel="stylesheet" type="text/css">
+<link href="../css/slideshow_gallery.css" rel="stylesheet" type="text/css">
+
+<!-- link to external js for slideshow gallery -->
+<script type="text/javascript" src="../js/slideshow.gallery.js"></script>
+</head>
+
+
+
+
+
+<body>
+<!-- Side Navigation Overlay: https://www.w3schools.com/howto/howto_js_sidenav.asp -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+  <a href="../index.html">Home</a>
+  <a href="history.html">History</a>
+<!-- Dropdown Sidebar: https://www.w3schools.com/howto/howto_js_dropdown_sidenav.asp -->
+  <button class="dropdown-btn">Neighborhood<span id="downtriangle">&#9660;</span></button>
+    <div class="dropdown-container">
+      <a href="transportation.html">Transportations</a>
+      <a href="shopping_mall.html">Shopping Malls</a>
+      <a href="store.html">More Stores</a>
+      <a href="fast_food.html">Fast-Food Chains</a>
+      <a href="chinese_food.html">Chinese/Japanese Cuisine Restaurants</a>
+      <a href="school.html">Schools</a>
+    </div>
+  <a href="contact.html">Contact</a>
+  <a href="sitemap.html">Sitemap</a>
+  <a href="credit.html">Credits</a>
+</div>
+
+
+
+<div id="navbar">
+  <span id="icon" onclick="openNav()">&#8801;</span>
+  <span><a href="../index.html" id="logolink"><img src="../imgs/logo.png" alt="Logo" id="logo"></a></span>
+  <span id="lang">中文</span>
+</div>
+
+
+
+<div id="navbar-space">
+</div>
+
+
+
+<div class="content">
+  <h1 class="page_title"> Shopping Malls </h1>
+
+  <h2> Rego Center </h2>
+<!-- Slideshow Gallery: https://www.w3schools.com/howto/howto_js_slideshow_gallery.asp -->
+  <div class="container">
+    <div class="mySlides">
+      <div class="numbertext">1 / 12</div>
+      <img src="../imgs/shoppingmall/rego_center/outside01.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 12</div>
+      <img src="../imgs/shoppingmall/rego_center/outside02.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 12</div>
+      <img src="../imgs/shoppingmall/rego_center/outside03.jpg" style="width:100%">
+    </div>
+      
+    <div class="mySlides">
+      <div class="numbertext">4 / 12</div>
+      <img src="../imgs/shoppingmall/rego_center/outside04.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 12</div>
+      <img src="../imgs/shoppingmall/rego_center/inside01.jpg" style="width:100%">
+    </div>
+      
+    <div class="mySlides">
+      <div class="numbertext">6 / 12</div>
+      <img src="../imgs/shoppingmall/rego_center/inside02.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">7 / 12</div>
+      <img src="../imgs/shoppingmall/rego_center/inside03.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 12</div>
+      <img src="../imgs/shoppingmall/rego_center/directory.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">9 / 12</div>
+      <img src="../imgs/shoppingmall/rego_center/daiso.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">10 / 12</div>
+      <img src="../imgs/shoppingmall/rego_center/gongcha.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">11 / 12</div>
+      <img src="../imgs/shoppingmall/rego_center/costco01.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">12 / 12</div>
+      <img src="../imgs/shoppingmall/rego_center/costco02.jpg" style="width:100%">
+    </div>  
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="../imgs/shoppingmall/rego_center/thumbnail/small_outside01.jpg" style="width:100%" onclick="currentSlide(1)" alt="Rego Center - Outside View 01">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../imgs/shoppingmall/rego_center/thumbnail/small_outside02.jpg" style="width:100%" onclick="currentSlide(2)" alt="Rego Center - Outside View 02">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../imgs/shoppingmall/rego_center/thumbnail/small_outside03.jpg" style="width:100%" onclick="currentSlide(3)" alt="Rego Center - IKEA">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../imgs/shoppingmall/rego_center/thumbnail/small_outside04.jpg" style="width:100%" onclick="currentSlide(4)" alt="Rego Center - Side View">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../imgs/shoppingmall/rego_center/thumbnail/small_inside01.jpg" style="width:100%" onclick="currentSlide(5)" alt="Rego Center - Sign">
+      </div>    
+      <div class="column">
+        <img class="demo cursor" src="../imgs/shoppingmall/rego_center/thumbnail/small_inside02.jpg" style="width:100%" onclick="currentSlide(6)" alt="Rego Center - Inside View 01">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../imgs/shoppingmall/rego_center/thumbnail/small_inside03.jpg" style="width:100%" onclick="currentSlide(7)" alt="Rego Center - Inside View 02">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../imgs/shoppingmall/rego_center/thumbnail/small_directory.jpg" style="width:100%" onclick="currentSlide(8)" alt="Rego Center - Directory">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../imgs/shoppingmall/rego_center/thumbnail/small_daiso.jpg" style="width:100%" onclick="currentSlide(9)" alt="Rego Center - Daiso">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../imgs/shoppingmall/rego_center/thumbnail/small_gongcha.jpg" style="width:100%" onclick="currentSlide(10)" alt="Rego Center - Gong Cha">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../imgs/shoppingmall/rego_center/thumbnail/small_costco01.jpg" style="width:100%" onclick="currentSlide(11)" alt="Rego Center - Costco">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="../imgs/shoppingmall/rego_center/thumbnail/small_costco02.jpg" style="width:100%" onclick="currentSlide(12)" alt="Rego Center - Costco Entrance">
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    showSlides(slideIndex);
+  </script>
+<br>
+  <p>
+    Rego Park is home to some of Queens' most popular shopping destinations, including the 4-floor Rego Center (25,700 m2). <br> It has Marshalls, Burlington Coat Factory, Old Navy, and (a newly opened) IKEA locations, as well as a multilevel parking garage developed by Vornado Realty Trust.
+  </p>
+<br>
+</div>
+
+
+
+<footer>
+  <p>
+    <!-- add font awesome icons: https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
+    <a href="https://www.instagram.com/art_tinatsai/" target="_blank" class="fa fa-instagram"></a>
+    <a href="https://www.youtube.com/channel/UCtJ8DekwubmhOjbzRtg7CXw" target="_blank" class="fa fa-youtube-play"></a>
+    <a href="https://www.linkedin.com/in/yun-ting-tsai-4bab791b8/" target="_blank" class="fa fa-linkedin"></a>
+
+    <br><br>
+
+    © 2021 <a href="https://arttinatsai.weebly.com/" target="_blank" id="footer-link"> Yun-Ting Tsai </a>
+  </p>
+</footer>
+
+<button onclick="topFunction()" id="to_top_btn" title="Go To Top">&#x25B2;</i></button>
+
+<script src="../js/pages.js"></script>
+</body>
+</html>

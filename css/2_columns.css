@@ -1,0 +1,128 @@
+/* Multiple Modal Images: https://stackoverflow.com/questions/47798971/several-modal-images-on-page */
+.content-img {
+  vertical-align: middle;
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.content-img:hover {
+  opacity: 0.7;
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 20;
+  /* Sit on top */
+  padding-top: 85px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  height: 550px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 725px;
+  text-align: center;
+  color: #ccc;
+  padding: 20px 0;
+}
+
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+/* Responsive Image Grid: https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  margin: 60px 30px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other */
+@media screen and (max-width: 750px) {
+  .modal-content {
+    width: 100%;
+    height: auto;
+  }
+
+  .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 35px 20px; /*height width*/
+  }
+
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    margin: 5px 0;
+  }
+}
